@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // someFunction=(a)=>{
+        //     console.log("Hello World");
+        //     a();
+        // }
+
+        // someFunction(()=>{console.log("this is a callback function")});
+
+
+        let avengers = [
+            { name: "Thor", age: 1500 },
+            { name: "Iron Man", age: 34 },
+            { name: "Captain America", age: 34 },
+            { name: "Hulk", age: 44 },
+            { name: "Wanda", age: 25 }
+        ]
+
+        // avengers.forEach((x)=>{
+        //     console.log(x.name);
+        // })
+
+        // let av=avengers.map((x)=>{
+        //     if (x.age===34) {
+        //         return x.name;
+        //     }
+        // })
+
+        // let av=avengers.filter((x)=>{
+        //     return x.age===34;
+        // })
+
+        // let av=avengers.find((x)=>{
+        //     return x.age===34;
+        // })
+
+        let av = avengers.findIndex((x) => {
+            return x.age === 34;
+        })
+
+        console.log(av);
+
+    </script>
+</body>
+
+</html>

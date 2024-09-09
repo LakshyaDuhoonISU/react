@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // console.log("line 1");
+        // console.log("line 2");
+        // setTimeout(() => {
+        //     console.log("line 3");
+        // }, 5000);
+        // console.log("line 4");
+        // console.log("line 5");
+
+
+        // let promise = new Promise((resolve, reject) => {
+        //     let i = 1;
+        //     if (i === 1) {
+        //         resolve("All good");
+        //     }
+        //     else {
+        //         reject("Not good");
+        //     }
+        // });
+
+        // promise
+        //     .then((msg) => {
+        //         console.log(msg);
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //     });
+
+        // getUsers = () => {
+        //     return new Promise((resolve, reject) => {
+        //         users = [{ id: 1, name: "King" }, { id: 2, name: "King Shaikh" }];
+        //         if (users !== null) {
+        //             resolve(users);
+        //         }
+        //         else {
+        //             reject(new Error("Unable to fetch users"));
+        //         }
+        //     })
+        // }
+
+        // getPosts = (user) => {
+        //     return new Promise((resolve, reject) => {
+        //         posts = [{ id: 1, title: "Good Place" }, { id: 2, title: "Good Place" }];
+        //         if (posts !== null) {
+        //             resolve(posts);
+        //         }
+        //         else {
+        //             reject(new Error("Unable to fetch posts"));
+        //         }
+        //     })
+        // }
+
+        // getUsers()
+        //     .then((users) => {
+        //         console.log(users);
+        //         getPosts(users[0])
+        //             .then((posts) => {
+        //                 console.log(posts);
+        //             })
+        //             .catch((err) => {
+        //                 console.log(err);
+        //             })
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //     })
+
+        // getUsers()
+        //     .then((users) => {
+        //         console.log(users);
+        //         return getPosts(users[0]);
+        //     })
+        //     .then((posts)=>{
+        //         console.log(posts);
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //     })
+
+        fetch("https://jsonplaceholder.typicode.com/users")
+        .then((response)=>{
+            return response.json();
+        })
+        .then((data)=>{
+            console.log(data);
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+
+
+        
+    </script>
+</body>
+
+</html>

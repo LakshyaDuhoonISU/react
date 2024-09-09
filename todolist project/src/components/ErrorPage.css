@@ -1,0 +1,29 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .error-page-buttons button {
+    background-color: #20df2a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .error-page-buttons button:hover {
+    background-color: #3ebc30;
+  }
+
+  .error-img {
+    width: 40%;
+  }

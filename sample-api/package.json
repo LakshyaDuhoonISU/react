@@ -1,0 +1,16 @@
+{
+  "name": "sample-api",
+  "version": "1.0.0",
+  "description": "sample api project",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon index.js"
+  },
+  "author": "Lakshya",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  }
+}
